@@ -1,1 +1,78 @@
-
+*{
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+main{
+  margin: 100px auto;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./images/pattern-curve.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  width: 1000px;
+}
+.container{
+  display: flex;
+  position: relative;
+  width: 800px;
+  height: 500px;
+  padding: 50px;
+  background-image: url('./images/pattern-bg.svg');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: right 10%;
+}
+.content{
+  height: 400px;
+  width: 400px;
+  background-image: url('./images/pattern-quotes.svg');
+  background-repeat: no-repeat;
+  background-position: 20% 20%;
+}
+p{
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  width: 50%;
+  font-size: 22px;
+}
+h1{
+  font-size: 16px;
+  position: absolute;
+  top:58%;
+  display: flex;
+  gap: 15px;
+}
+span{
+  color: hsl(240, 18%, 77%);
+}
+.image{
+  position: absolute;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image > img{
+  width: 400px;
+  box-shadow: 5px 5px 5px rgb(211, 211, 211);
+  border-radius: 5px;
+}
+button{
+  display: flex;
+  gap: 25px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 0;
+  box-shadow: 3px 3px 3px rgb(160, 160, 160);
+  position: absolute;
+  bottom: -20px;
+  left: 10%;
+  background-color: white;
+  cursor: pointer;
+}
+.display-none{
+  display: none;
+}
